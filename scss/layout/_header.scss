@@ -1,0 +1,52 @@
+// HEADER & NAV - LAYOUT
+@use '../abstracts' as *;
+
+.header {
+  @include card-base;
+  @include flex-layout($direction: column, $gap: 1.25rem);
+  padding: 1.5rem;
+  margin-bottom: calc($spacing-base * 1.5);
+
+  @include respond-to('tablet') {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-content {
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: $text-color;
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 0.95rem;
+  }
+}
+
+.nav-list {
+  @include flex-layout($direction: row, $gap: 0.75rem);
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  transition: $transition-fast;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}

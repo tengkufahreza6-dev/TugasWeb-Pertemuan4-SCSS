@@ -1,0 +1,9 @@
+// SIDEBAR - LAYOUT
+@use '../abstracts' as *;
+
+.sidebar {
+  .card {
+    position: sticky;
+    top: $spacing-base;
+  }
+}

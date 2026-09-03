@@ -1,0 +1,20 @@
+// BUTTONS - COMPONENTS
+@use '../abstracts' as *;
+
+.btn {
+  background-color: $primary-color;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: $primary-hover;
+    transform: translateY(-1px);
+  }
+}

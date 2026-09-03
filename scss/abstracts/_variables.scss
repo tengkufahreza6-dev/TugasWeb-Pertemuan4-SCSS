@@ -1,0 +1,45 @@
+// VARIABLES - ABSTRACTS
+
+// Colors (Light Mode)
+$bg-color: #f0f2f5;
+$card-bg: #ffffff;
+$text-color: #1a1d20;
+$text-muted: #6c757d;
+$primary-color: #2563eb;
+$primary-hover: #1d4ed8;
+$border-color: #e5e7eb;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+
+// Dark Mode Colors
+$dark-bg-color: #0f172a;
+$dark-card-bg: #1e293b;
+$dark-text-color: #f8fafc;
+$dark-text-muted: #94a3b8;
+$dark-primary-color: #3b82f6;
+$dark-primary-hover: #60a5fa;
+$dark-border-color: #334155;
+$dark-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+$dark-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+
+// Typography & Spacing
+$font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+$spacing-base: 1rem;
+$border-radius: 12px;
+$transition-fast: all 0.2s ease-in-out;
+
+// Breakpoints Map
+$breakpoints: (
+  'mobile': 576px,
+  'tablet': 768px,
+  'desktop': 992px
+);
+
+// Map untuk @each Loop (Badge/Status Colors - Memenuhi Requirement 7)
+$status-colors: (
+  'primary': $primary-color,
+  'secondary': $text-muted,
+  'dark': $dark-card-bg
+);

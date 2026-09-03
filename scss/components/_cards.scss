@@ -1,0 +1,41 @@
+// CARDS - COMPONENTS (Nesting Max 3 Level)
+@use '../abstracts' as *;
+
+.card {
+  @include card-base;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $text-color;
+  }
+}
+
+.text-muted {
+  color: $text-muted;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.profile-figure {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.profile-img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid $card-bg;
+  box-shadow: $shadow-md;
+}

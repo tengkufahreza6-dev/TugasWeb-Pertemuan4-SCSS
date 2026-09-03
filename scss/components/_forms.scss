@@ -1,0 +1,51 @@
+// FORMS - COMPONENTS
+@use '../abstracts' as *;
+
+.form {
+  @include card-base;
+  @include flex-layout($direction: column, $gap: 1.2rem);
+  padding: calc($spacing-base * 1.5);
+  margin-top: 0.75rem;
+}
+
+.form-group {
+  @include flex-layout($direction: column, $gap: 0.4rem);
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+}
+
+.form-control {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: $transition-fast;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+}
+
+.form-control-color {
+  width: 60px;
+  height: 38px;
+  padding: 2px;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: $bg-color;
+}
+
+.form-control-range {
+  accent-color: $primary-color;
+  cursor: pointer;
+}

@@ -1,0 +1,34 @@
+// MIXINS - ABSTRACTS (Dart SASS Modern)
+
+@use 'sass:map';
+@use 'variables' as *;
+
+// Mixin 1: Flexbox Layout Helper
+@mixin flex-layout($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Mixin 2: Card Base Styling
+@mixin card-base($bg: $card-bg, $border: $border-color, $radius: $border-radius) {
+  background-color: $bg;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 1.2rem;
+  box-shadow: $shadow-sm;
+  transition: $transition-fast;
+}
+
+// Mixin 3: Responsive Media Query Wrapper
+@mixin respond-to($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' tidak ditemukan dalam map $breakpoints.";
+  }
+}

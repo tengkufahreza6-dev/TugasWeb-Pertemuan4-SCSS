@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Tengku Fahreza</title>
+    <meta name="description" content="Website pribadi Tengku Fahreza, mahasiswa Ilmu Komputer UNIMED.">
+    
+    <meta property="og:title" content="Landing Page - Tengku Fahreza">
+    <meta property="og:description" content="Website pribadi dan kontak Tengku Fahreza.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="gambar-profil-fahreza.jpg">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Tengku Fahreza</h1>
+            <p>Mahasiswa Ilmu Komputer - Universitas Negeri Medan</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#proyek" class="nav-link">Proyek</a></li>
+                <li><a href="#minat" class="nav-link">Minat</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout-container">
+        <main class="main-content">
+
+            <section id="tentang" class="section">
+                <h2>Tentang Saya</h2>
+                <article class="card">
+                    <h3>Profil</h3>
+                    <p>Saat ini saya sedang menempuh pendidikan S1 Ilmu Komputer di UNIMED. Fokus belajar saya mencakup pemrosesan data, logika pemrograman, dan pengembangan aplikasi web dasar.</p>
+                    <p class="text-muted">Terakhir diperbarui: <time datetime="2026-08-22">22 Agustus 2026</time></p>
+                </article>
+
+                <figure class="profile-figure">
+                    <img src="gambar-profil-fahreza.jpg" alt="Foto profil Tengku Fahreza" class="profile-img">
+                    <figcaption>Foto Profil Tengku Fahreza</figcaption>
+                </figure>
+            </section>
+
+            <section id="proyek" class="section">
+                <h2>Proyek Akademik & Latihan</h2>
+                <div class="project-grid">
+                    <article class="card">
+                        <h3>Penentu Luas Lahan dengan Integral Numerik</h3>
+                        <p>Aplikasi perhitungan luas lahan berbasis metode numerik yang dikombinasikan dengan integrasi peta interaktif untuk pemetaan area.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Monitoring Indeks UV Real-Time</h3>
+                        <p>Web pemantau tingkat radiasi UV secara real-time yang mengolah response JSON dari API OpenWeatherMap dan Visual Crossing.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="kontak" class="section">
+                <h2>Formulir Kontak</h2>
+                <form action="#" method="post" class="form">
+                    
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Nama Anda" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="alamat@email.com" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jadwal">Rencana Tanggal Diskusi:</label>
+                        <input type="date" id="jadwal" name="jadwal" required class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="warna_tema">Warna Identitas/Tema:</label>
+                        <input type="color" id="warna_tema" name="warna_tema" value="#0055ff" class="form-control-color">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgensi">Skala Urgensi Pesan (1 - 10):</label>
+                        <input type="range" id="urgensi" name="urgensi" min="1" max="10" value="5" class="form-control-range">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="5" required placeholder="Tuliskan pesan di sini..." class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Kirim</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside id="minat" class="sidebar">
+            <div class="card">
+                <h2>Catatan Tambahan</h2>
+                <h3>Minat Lain</h3>
+                <p>Di luar aktivitas perkuliahan, saya tertarik mengeksplorasi performa perangkat audio, analisis data sederhana, dan gim strategi.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Tengku Fahreza.</p>
+    </footer>
+
+</body>
+</html>

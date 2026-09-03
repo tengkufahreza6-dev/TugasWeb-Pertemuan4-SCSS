@@ -1,0 +1,23 @@
+// TYPOGRAPHY & BODY - BASE
+@use '../abstracts' as *;
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-family;
+  line-height: 1.6;
+  padding: $spacing-base;
+  max-width: 1100px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: $text-muted;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,41 @@
+// DARK MODE TWEAKS - LAYOUT
+@use '../abstracts' as *;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dark-bg-color;
+    color: $dark-text-color;
+  }
+
+  .card, .header, .form {
+    background-color: $dark-card-bg;
+    border-color: $dark-border-color;
+    box-shadow: $dark-shadow-sm;
+  }
+
+  .card h3, .section h2 {
+    color: $dark-primary-color;
+  }
+
+  .section h2 {
+    border-bottom-color: $dark-border-color;
+  }
+
+  .header-content h1, .form-group label, .card p {
+    color: $dark-text-color;
+  }
+
+  .header-content p, .text-muted, figcaption, .footer {
+    color: $dark-text-muted;
+  }
+
+  .nav-link, .form-control {
+    background-color: $dark-bg-color;
+    border-color: $dark-border-color;
+    color: $dark-text-color;
+  }
+
+  .profile-img {
+    border-color: $dark-card-bg;
+  }
+}

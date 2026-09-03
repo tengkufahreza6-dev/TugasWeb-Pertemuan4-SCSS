@@ -1,0 +1,32 @@
+// GRID LAYOUTS - LAYOUT
+@use '../abstracts' as *;
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc($spacing-base * 1.5);
+
+  @include respond-to('tablet') {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $spacing-base;
+  margin-top: 1rem;
+}
+
+.section {
+  margin-bottom: calc($spacing-base * 2);
+
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $text-color;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 0.4rem;
+  }
+}

@@ -1,0 +1,19 @@
+// BADGES - COMPONENTS (Menggunakan @each Loop)
+@use '../abstracts' as *;
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+}
+
+// Generate utility class badge otomatis dari $status-colors map
+@each $name, $color in $status-colors {
+  .badge-#{$name} {
+    background-color: $color;
+    color: #ffffff;
+  }
+}

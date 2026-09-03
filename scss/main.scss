@@ -1,0 +1,13 @@
+// MAIN SCSS ENTRY POINT - 7-1 PATTERN
+
+// 1. Abstracts (Variables, Mixins)
+@use 'abstracts';
+
+// 2. Base Styles (Reset, Typography)
+@use 'base';
+
+// 3. Components (Buttons, Cards, Forms, Badges)
+@use 'components';
+
+// 4. Layout (Header, Grid, Sidebar, Footer, Dark Mode)
+@use 'layout';
