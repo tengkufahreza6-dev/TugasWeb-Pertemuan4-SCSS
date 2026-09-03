@@ -45,7 +45,8 @@ TugasWeb-Pertemuan4-SCSS/
     │   └── _sidebar.scss
     └── main.scss
 
- ## 👤 Informasi Mahasiswa
+ 
+## 👤 Informasi Mahasiswa
 
 - **Nama:** Tengku Fahreza
 - **NIM / Class:** PSIK 25B
