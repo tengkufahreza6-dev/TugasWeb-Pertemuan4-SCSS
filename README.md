@@ -48,8 +48,8 @@ TugasWeb-Pertemuan4-SCSS/
  
 ## 👤 Informasi Mahasiswa
 
-- **Nama:** Tengku Fahreza
-- **NIM / Class:** PSIK 25B
+- **Nama:** Tengku Fahreza (4252550005)
+- **Class:** PSIK 25B
 - **Program Studi:** S1 Ilmu Komputer
 - **Mata Kuliah:** Pemrograman Web
 - **Instansi:** Universitas Negeri Medan (UNIMED)
