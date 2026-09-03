@@ -2,6 +2,9 @@
 
 Aplikasi web portofolio pribadi hasil *refactoring* dari **Tugas Pertemuan 2** menggunakan **SCSS (SASS)** dengan arsitektur modular **7-1 Pattern**.
 
+## Link Live Demo
+[Link Github Pages](https://tengkufahreza6-dev.github.io/TugasWeb-Pertemuan4-SCSS/)
+
 ## 📌 Pemenuhan Requirements
 
 1. **Konversi CSS Existing ke SCSS:** Seluruh gaya CSS dikonversi penuh ke format SCSS.
